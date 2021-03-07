@@ -61,6 +61,7 @@ dependencies:
 - unordered-containers
 - vector
 - vector-instances
+- subcategories
 
 library:
   source-dirs: src

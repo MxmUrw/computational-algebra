@@ -1,1 +1,39 @@
-stack-808.yaml
+
+# resolver: nightly-2020-07-12
+
+resolver: nightly-2021-01-11
+compiler: ghc-8.10.3
+compiler-check: match-exact
+
+flags: {}
+packages:
+- 'computational-algebra'
+- 'algebraic-prelude'
+- 'halg-algebraic'
+- 'halg-algorithms'
+- 'halg-bridge-singular'
+- 'halg-core'
+- 'halg-core-test'
+- 'halg-factor'
+- 'halg-galois-fields'
+- 'halg-heaps'
+- 'halg-matrices'
+- 'halg-polyn-parser'
+- 'halg-polynomials'
+
+drop-packages:
+  - sized
+
+extra-deps:
+- algebra-4.3.1@rev:2
+- control-monad-loop-0.1
+- repa-3.4.1.4
+- unamb-0.2.7
+- ListLike-4.7.4
+- process-extras-0.7.4
+- sized-0.6.0.0 # NOTE: The source code seems to be currently incompatible with versions above 0.6.0.0. Since in the next version, 0.8.0.0, the type of sLength changed. - MxmUrw, 2021-03-07
+
+
+
+
+
